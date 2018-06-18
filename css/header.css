@@ -1,0 +1,28 @@
+header {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+}
+
+#fader {
+    background-size: cover;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-blend-mode: darken;
+}
+
+header h1 {
+    margin-bottom: 45px;
+    text-shadow: 2px 2px 4px #000000; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 29px;
+}

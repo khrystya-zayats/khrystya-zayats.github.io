@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+header .row {
+    min-height: 100vh;
+} 
+
+section {
+    min-height: 100vh;    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;  /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+header, #s2, #s3, #s4 {
+    background-color: #E6E6E6; /* Колір фону для секцій #s2, #s4 */
+    
+}
+
+
+/**************************************/
+/* Зміна властивостей для breakpoints */
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;    /* Для Small додати відступи */
+        padding-right: 15px;   /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+    section {
+        padding: 25px 0;
+    }
+
+}

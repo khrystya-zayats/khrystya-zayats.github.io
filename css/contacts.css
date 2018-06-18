@@ -1,0 +1,164 @@
+#s3 {
+    min-height: 100vh;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form-control-white {
+    background: transperent;
+    color: #e60060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.25;
+    color: #cedb00;
+    background-color: #F1F2F2;
+    border: 1px solid rgba(0, 0, 0, .15)
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s, box-shadow else-in-out .15s;
+}
+
+button, input {
+    overflow: visible;
+}
+
+#bottom {
+    color: white;
+    background-color: #cedb00;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid trasparent;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+.d-block {
+    display: block !important;
+    padding: 50px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+form {
+    display: block;
+    margin-top: 1rem;
+}
+
+form-group {
+    margin-bottom: 1rem;
+}
+
+div {
+    display: block;
+    justify-content: center;
+}
+
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+user agent stylesheet
+textarea {
+    -webkit-appearance: textarea;
+    background-color: white;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px;
+}
+
+user agent stylesheet
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 11px system-ui;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb !important;
+}
+
+#footer {
+    justify-content:center;
+    margin-top: 15px;
+}
+
+#footer a {
+    display: inline-block;
+    margin: 0 24px 0 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+a {
+    transition: all 0.2s;
+}
+
+#footer {
+    height: 50px;
+    background: transperent;
+    color: white;
+}
