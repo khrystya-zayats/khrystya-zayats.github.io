@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/contacts.css">
+ 
 
 
 </head>
@@ -258,18 +259,21 @@
                         <img class="d-block w-100" src="img/contacts.png" alt>
                     </div>
 
+                   
+
                     <div id="cnt" class="col-10 col-sm-6">
-                        <form class role="form">
+                        <form class role="form" id="contact-form">
+                        <input type="hidden" name="contact_number">
                             <div class="form-group">
-                                <input type="name" class="form-control form-control-white" id="subject" placeholder="Як тебе звати?" required>
+                                <input type="name" class="form-control form-control-white" id="subject" placeholder="Як тебе звати?" required name="user_name">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control form-control-white" id="exampleInputEmail2" placeholder="Твій email" required>
+                                <input type="email" class="form-control form-control-white" id="exampleInputEmail2" placeholder="Твій email" required  name="user_email">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control form-control-white" placeholder="Маєш питання, пропозиції, побажання?" required></textarea>
+                                <textarea class="form-control form-control-white" placeholder="Маєш питання, пропозиції, побажання?" required name="text"></textarea>
                             </div>
-                            <input id="bottom" type="submit" class="btn btn-o-white" value="Надіслати">
+                            <input id="bottom" type="submit" class="btn btn-o-white" value="Надіслати"  value="Send">
                         </form>
                     </div>
                 </div>
@@ -313,6 +317,25 @@
         </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("user_mozV8VEle39VBwoawCbiV");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                if( emailjs.sendForm('gmail', 'contact_form', this)) {
+                    alert('Повідомлення надіслано');
+                    this.reset();
+                }
+            });
+        }
+    </script>
     </body>
 
 </html>
